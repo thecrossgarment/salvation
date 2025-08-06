@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message of Hope</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 60px 40px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .cross {
+            font-size: 48px;
+            color: #8B4513;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        .message {
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .verse {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            font-size: 1.3em;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .verse-reference {
+            font-size: 0.9em;
+            margin-top: 15px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .steps {
+            margin: 40px 0;
+        }
+
+        .step {
+            background: #f8f9fa;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateX(5px);
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .step-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .step-content {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .prayer-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .prayer-title {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+
+        .prayer {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            font-style: italic;
+            color: #555;
+            line-height: 1.8;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 20px 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+
+        .heart {
+            color: #e74c3c;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .verse {
+                font-size: 1.1em;
+                padding: 20px;
+            }
+            
+            .step {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="cross">✞</div>
+            <h1>God's Gift of Love</h1>
+            <p class="subtitle">A message of hope and eternal life</p>
+        </div>
+
+        <div class="message">
+            <div class="verse">
+                "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
+                <div class="verse-reference">— John 3:16</div>
+            </div>
+
+            <p style="font-size: 1.1em; color: #555; text-align: center; margin: 30px 0;">
+                God loves you deeply and has a wonderful plan for your life. Here's how you can experience His love and forgiveness:
+            </p>
+
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div style="display: inline-block; vertical-align: top; width: calc(100% - 50px);">
+                        <div class="step-title">Recognize Your Need</div>
+                        <div class="step-content">
+                            We all have sinned and fallen short of God's perfect standard. This separates us from Him and leads to spiritual death.
+                            <br><em>"For all have sinned and fall short of the glory of God." - Romans 3:23</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div style="display: inline-block; vertical-align: top; width: calc(100% - 50px);">
+                        <div class="step-title">Understand God's Solution</div>
+                        <div class="step-content">
+                            God sent His Son Jesus Christ to die on the cross for our sins. Jesus paid the penalty we deserved and rose from the dead, proving His victory over sin and death.
+                            <br><em>"But God demonstrates his own love for us in this: While we were still sinners, Christ died for us." - Romans 5:8</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <div style="display: inline-block; vertical-align: top; width: calc(100% - 50px);">
+                        <div class="step-title">Receive God's Gift</div>
+                        <div class="step-content">
+                            Salvation is a free gift that cannot be earned. We receive it by faith - believing in Jesus Christ and accepting Him as our Lord and Savior.
+                            <br><em>"For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God." - Ephesians 2:8</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prayer-section">
+                <h3 class="prayer-title">A Prayer to Receive Christ</h3>
+                <div class="prayer">
+                    "Dear God, I know that I am a sinner and need Your forgiveness. I believe that Jesus Christ died for my sins and rose from the dead. I want to turn from my sins and invite Jesus to come into my heart and life. I trust Him as my Lord and Savior. Thank You for Your gift of eternal life. In Jesus' name, Amen."
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 40px 0;">
+                <p style="font-size: 1.2em; color: #2c3e50; margin-bottom: 20px;">
+                    If you prayed this prayer sincerely, you are now a child of God!
+                </p>
+                <a href="#" class="cta-button" onclick="showEncouragement()">I Prayed This Prayer</a>
+                <a href="https://joyfulwayinc.com/" class="cta-button">Click to Know More</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Made with <span class="heart">♥</span> to share God's love</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                "And this is the testimony: God has given us eternal life, and this life is in his Son." - 1 John 5:11
+            </p>
+            <p style="margin-top: 15px;">
+                <a href="https://joyfulwayinc.com/" style="color: #667eea; text-decoration: none;">Visit joyfulwayinc.com for more spiritual resources</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function showEncouragement() {
+            alert("Praise God! Welcome to the family of God! 🎉\n\nNext steps:\n• Read the Bible daily (start with the Gospel of John)\n• Pray regularly\n• Find a local church\n• Tell others about your decision\n\nGod bless you on this amazing journey!");
+        }
+
+        function showMoreInfo() {
+            alert("We'd love to help you learn more!\n\n• Visit your local church\n• Speak with a pastor or Christian friend\n• Read the Bible (Gospel of John is a great start)\n• Consider getting a study Bible\n\nGod is calling you - don't wait! ❤️");
+        }
+
+        // Add subtle animations on scroll
+        window.addEventListener('scroll', function() {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach(step => {
+                const rect = step.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    step.style.opacity = '1';
+                    step.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
